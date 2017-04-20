@@ -28,7 +28,7 @@ max_features = 2000  # 1000
 
 # In[3]:
 
-file = open('/Users/i337036/Documents/Data/smsspamcollection/SMSSpamCollection', 
+file = open('/Users/<>/Documents/Data/smsspamcollection/SMSSpamCollection', 
             encoding="utf-8")
 # Format Data
 text_data = file.read().split('\n')
@@ -36,7 +36,7 @@ text_data = [x.split('\t') for x in text_data if len(x)>=1]
 
 """
 import csv
-save_file_name = '/Users/i337036/Documents/Data/smsspamcollection/temp_spam_data.csv'
+save_file_name = '/Users/<>/Documents/Data/smsspamcollection/temp_spam_data.csv'
 # And write to csv
 with open(save_file_name, 'w', encoding="utf-8") as temp_output_file:
     writer = csv.writer(temp_output_file)
